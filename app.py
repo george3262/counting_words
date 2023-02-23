@@ -25,7 +25,7 @@ if text_input:
     st.write("House of Commons Word Count:  ", text_input)
 
 results = []
-words_search = [f' {text_input.lower()} ']
+words_search = [f' {text_input.lower()}']
 for index, row in df.iterrows():
     for word in words_search:
         result = {
